@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Video Optimizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 90%;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>TikTok Video Optimizer</h2>
+        <input type="file" id="videoUpload" accept="video/*">
+        <button onclick="optimizeVideo()">Optimize Video</button>
+        <p id="result">Upload a video and get SEO suggestions!</p>
+    </div>
+
+    <script>
+        function optimizeVideo() {
+            document.getElementById("result").innerText = "Processing... AI will analyze your video.";
+            setTimeout(() => {
+                document.getElementById("result").innerText = "Best Hashtags: #viral #foryou #trending";
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
